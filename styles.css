@@ -211,8 +211,7 @@ nav .mobile-close,
 .bg-right-mobile {
   display: none;
 }
-
-@media (max-width: 600px) {
+@media (max-width: 968px) {
   .hero-bg-left,
   .hero-bg-right,
   nav ul,
@@ -271,6 +270,7 @@ nav .mobile-close,
   .bg-right-mobile {
     position: fixed;
     bottom: 0;
+    right: 0;
     z-index: -100;
     display: block;
   }
@@ -326,4 +326,28 @@ nav .mobile-close,
     opacity: 1;
     pointer-events: auto;
   }
+  .social-icons {
+    position: relative;
+    text-align: center;
+    bottom: 0px;
+}
+}
+@media (max-width: 968px) and (min-width:768px) {
+    .hero-image img {
+        height: 450px;
+        margin-bottom: -50px;
+    }
+    .hero-text h1{
+        font-size: 60px !important;
+    }
+    .hero-text .subheading{
+        width: 50% !important;
+        margin: auto;
+        font-size: 18px !important;
+    }
+}
+@media (max-width: 1366px) and (min-width:968px) {
+    .main-container{
+        width: 100%;
+    }
 }
